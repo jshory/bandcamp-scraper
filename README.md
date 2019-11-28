@@ -4,7 +4,7 @@ A web scraper that pulls Album of the Day data from bandcamp.com every afternoon
 
 ### Technology
 
-The Bandcamp Scraper is built with Node.js (version 8.11.1), Puppeteer (version 2.0.0), and Cheerio (version 1.0.0-rc.3). Node-Cron (version 2.0.3) is used to schedule a daily scrape (currently scheduled for 4:30pm EST), and Mongoose (version 5.7.12) allows for database connectivity.
+The Bandcamp Scraper is built with Node.js (version 8.11.1), Puppeteer (version 2.0.0), and Cheerio (version 1.0.0-rc.3). Mongoose (version 5.7.12) allows for database connectivity.
 
 ### Status
 
