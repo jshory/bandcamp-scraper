@@ -14,13 +14,13 @@ mongoose.connect(process.env.MONGOURI, { useNewUrlParser: true, useUnifiedTopolo
     .then(() => console.log('MongoDB connected'))
     .catch((error) => console.log(error));
 
-app.get('/', (req, res) => {
-    //scrape the bandcamp album of the day daily at 5:00pm
-    scraper()
-        .then((aotd) => {
-            const albumOfTheDay = new AlbumOfTheDay(aotd);
-            albumOfTheDay.save().then(() => console.log('album of the day saved')).catch(error => console.log(error));
-        })
-        .catch((error) => console.log(error));
-    res.send('Bandcamp Scraper');
-});
+// app.get('/', (req, res) => {
+//scrape the bandcamp album of the day daily at 5:00pm
+scraper()
+    .then((aotd) => {
+        const albumOfTheDay = new AlbumOfTheDay(aotd);
+        albumOfTheDay.save().then(() => console.log('album of the day saved')).catch(error => console.log(error));
+    })
+    .catch((error) => console.log(error));
+// res.send('Bandcamp Scraper');
+// });
