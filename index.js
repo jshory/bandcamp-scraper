@@ -11,7 +11,7 @@ app.listen(port, () => {
     console.log('Listening on port ' + port);
 });
 
-mongoose.connect(process.env.MONGOURI, { useMongoClient: true, useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGOURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch((error) => console.log(error));
 
