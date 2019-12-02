@@ -22,5 +22,5 @@ scraper()
         albumOfTheDay.save().then(() => console.log('album of the day saved')).catch(error => console.log(error));
     })
     .catch((error) => console.log(error));
-res.send('Bandcamp Scraper');
+// res.send('Bandcamp Scraper');
 // });
