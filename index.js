@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGOURI, { useNewUrlParser: true, useUnifiedTopolo
     .then(() => console.log('MongoDB connected'))
     .catch((error) => console.log(error));
 
-//scrape the bandcamp album of the day daily at 5:00pm
+//scrape the bandcamp 'album of the day' daily at 11:00am EST
 scraper()
     .then((aotd) => {
         const albumOfTheDay = new AlbumOfTheDay(aotd);
